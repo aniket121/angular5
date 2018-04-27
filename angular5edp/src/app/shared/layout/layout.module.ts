@@ -11,6 +11,7 @@ import {ToggleActiveDirective} from "../utils/toggle-active.directive";
 import {LayoutSwitcherComponent} from "./layout-switcher.component";
 import { MainLayoutComponent } from './app-layouts/main-layout.component';
 import { EmptyLayoutComponent } from './app-layouts/empty-layout.component';
+import {CustomLayoutComponent} from "./app-layouts/custom-layout.component";
 import {RouterModule} from "@angular/router";
 import { AuthLayoutComponent } from './app-layouts/auth-layout.component';
 import {TooltipModule, BsDropdownModule} from "ngx-bootstrap";
@@ -38,6 +39,7 @@ import {UtilsModule} from "../utils/utils.module";
     LayoutSwitcherComponent,
     MainLayoutComponent,
     EmptyLayoutComponent,
+    CustomLayoutComponent,
     AuthLayoutComponent,
     RouteBreadcrumbsComponent,
   ],

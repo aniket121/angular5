@@ -5,7 +5,7 @@ import {NgModule} from "@angular/core";
 import {PopoverModule} from "ngx-popover";
 
 import {CollapseMenuComponent} from "./collapse-menu/collapse-menu.component";
-import {RecentProjectsComponent} from "./recent-projects/recent-projects.component";
+import {RecentMenuComponent} from "./recent-Menu/recent-Menu.component";
 import {FullScreenComponent} from "./full-screen/full-screen.component";
 
 import {ActivitiesComponent} from "./activities/activities.component";
@@ -37,7 +37,7 @@ import {BsDropdownModule} from "ngx-bootstrap";
     ActivitiesMessageComponent,
     ActivitiesNotificationComponent,
     ActivitiesTaskComponent,
-    RecentProjectsComponent,
+    RecentMenuComponent,
     FullScreenComponent,
     CollapseMenuComponent,
     ActivitiesComponent,

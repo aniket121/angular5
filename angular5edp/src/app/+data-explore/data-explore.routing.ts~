@@ -1,0 +1,16 @@
+import { Routes, RouterModule } from '@angular/router';
+import {DataExploreComponent} from "./data-explore.component";
+import {ModuleWithProviders} from "@angular/core";
+
+export const homeRoutes: Routes = [
+    {
+        path: '',
+        component: DataExploreComponent,
+        data: {
+            pageTitle: 'Home'
+        }
+    }
+];
+
+export const homeRouting: ModuleWithProviders = RouterModule.forChild(homeRoutes);
+
