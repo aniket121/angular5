@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { HttpClient } from "@angular/common/http";
+import { environment } from './../../environments/environment';
 
 @Injectable()
 export class AuthService {
-  isLoggedIn: boolean = false;
+   isLoggedIn: boolean = false;
+   constructor(private http: HttpClient) {}
+   redirectUrl: string;
 
-  // store the URL so we can redirect after logging in
-  redirectUrl: string;
-
-  login(): Observable<boolean> {
-    return Observable.of(true).delay(1000).do(val => this.isLoggedIn = true);
+  login(data) {
+  return this.http.post(environment.BASE_URL + '/user-login/', data).map(res => res);
+  }
+  forgotPassword(data) {
+  return this.http.post(environment.BASE_URL + '/user-forgot/', data).map(res => res);
   }
 
   logout(): void {
