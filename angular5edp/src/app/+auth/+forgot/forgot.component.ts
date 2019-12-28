@@ -5,7 +5,7 @@ import { AuthService } from '../auth.service';
 @Component({
   selector: 'app-forgot',
   templateUrl: './forgot.component.html',
-  providers: [AuthService]
+  providers: [AuthService],
 
   styles: []
 })
